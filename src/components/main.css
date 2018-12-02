@@ -1,0 +1,46 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    cursor: hand;
+  }
+  .card {
+    flex: 0 0 275px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    cursor: hand;
+  } 
+  .card img {
+    max-width: 100%;
+  }
+  .card .text {
+    padding: 0 20px 20px;
+  }
+  .card .text > button {
+    background: gray;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    }
+  .counterclass {
+      counter-reset: section;
+  }
+  .counterclass span {
+    content: "\00000a";
+    white-space: pre-line;
+    word-break: break-all;
+  }
+  .counterclass span::before {
+    counter-increment: section;
+    content: "\00000a" counter(section) ": ";
+  }
+  .highlight{
+    border-radius: 21px 10px 10px 10px;
+    -moz-border-radius: 21px 10px 10px 10px;
+    -webkit-border-radius: 21px 10px 10px 10px;
+    border: 0px solid #000000;
+  }
+
+    
